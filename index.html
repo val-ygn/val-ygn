@@ -325,6 +325,19 @@ nav {
 .ci-arrow { font-size: 0.78rem; color: var(--muted); transition: all 0.2s; }
 .contact-item:hover .ci-arrow { color: var(--c1); transform: translate(2px, -2px); }
 
+.contact-social { margin-top: 1.25rem; }
+.social-links {
+  display: flex; flex-wrap: wrap; gap: 0.75rem;
+}
+.social-link {
+  display: inline-flex; align-items: center; gap: 0.55rem;
+  padding: 0.76rem 1rem; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--surface);
+  color: var(--text); font-size: 0.82rem; font-weight: 600;
+  text-decoration: none; transition: all 0.2s;
+}
+.social-link:hover { border-color: var(--c1); color: var(--c1); transform: translateY(-1px); }
+
 .contact-form { display: flex; flex-direction: column; gap: 0.9rem; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
 .contact-form .field { margin: 0; }
@@ -450,12 +463,21 @@ footer p { font-size: 0.73rem; color: var(--muted); }
         <a href="mailto:hello@exemple.fr" class="contact-item">
           <span class="ci-left">✉️ hello@exemple.fr</span><span class="ci-arrow">↗</span>
         </a>
-        <a href="https://linkedin.com" class="contact-item" target="_blank">
+        <a href="https://linkedin.com" class="contact-item" target="_blank" rel="noopener noreferrer">
           <span class="ci-left">💼 LinkedIn</span><span class="ci-arrow">↗</span>
         </a>
-        <a href="https://github.com" class="contact-item" target="_blank">
+        <a href="https://github.com" class="contact-item" target="_blank" rel="noopener noreferrer">
           <span class="ci-left">🐙 GitHub</span><span class="ci-arrow">↗</span>
         </a>
+      </div>
+      <div class="contact-social">
+        <span class="section-tag">Retrouvez-moi</span>
+        <div class="social-links">
+          <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener noreferrer">💼 LinkedIn</a>
+          <a href="https://github.com" class="social-link" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
+          <a href="https://twitter.com" class="social-link" target="_blank" rel="noopener noreferrer">🐦 Twitter</a>
+          <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer">📸 Instagram</a>
+        </div>
       </div>
     </div>
     <div class="reveal">
@@ -475,7 +497,14 @@ footer p { font-size: 0.73rem; color: var(--muted); }
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">Mon<span>.</span>Portfolio</div>
+  <div>
+    <div class="footer-logo">Mon<span>.</span>Portfolio</div>
+    <div class="social-links" style="margin-top:0.8rem;">
+      <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener noreferrer">💼 LinkedIn</a>
+      <a href="https://github.com" class="social-link" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
+      <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer">📸 Instagram</a>
+    </div>
+  </div>
   <p>© 2024 · Fait avec ☕ à Paris</p>
   <p>Design &amp; développement maison</p>
 </footer>
