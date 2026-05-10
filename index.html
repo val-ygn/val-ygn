@@ -474,50 +474,21 @@ footer p { font-size: 0.73rem; color: var(--muted); }
 <!-- FOOTER -->
 <footer>
   <div>
-    <div class="footer-logo">Mon<span>.</span>Portfolio</div>
+    <div class="footer-logo">Portfolio de Val.ygn</div>
     <div class="social-links" style="margin-top:0.8rem;">
-      <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener noreferrer">💼 LinkedIn</a>
-      <a href="https://github.com" class="social-link" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
-      <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer">📸 Instagram</a>
+      <a href="https://discord.com/app" class="social-link" target="_blank" rel="noopener noreferrer">Discord : val.ygn</a>
+      <a href="https://github.com/val-ygn" class="social-link" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
     </div>
   </div>
-  <p>© 2024 · Fait avec ☕ à Paris</p>
-  <p>Design &amp; développement maison</p>
+  <p>© 2026 · Développé par Val.ygn</p>
 </footer>
-
-<!-- MODAL -->
-<div class="modal-overlay" id="modalOverlay" onclick="handleOverlayClick(event)">
-  <div class="modal">
-    <h3 class="modal-title" id="modalTitle">Nouveau <em>projet</em></h3>
-    <div class="field"><label>Titre du projet *</label><input type="text" id="fTitle" placeholder="Mon super projet"></div>
-    <div class="field"><label>Catégorie</label><input type="text" id="fCat" placeholder="Web App, Design, Mobile…"></div>
-    <div class="field"><label>Description</label><textarea id="fDesc" placeholder="Décrivez votre projet en quelques lignes…"></textarea></div>
-    <div class="field"><label>Lien du site (optionnel)</label><input type="url" id="fLink" placeholder="https://monprojet.fr"></div>
-    <div class="field"><label>Année</label><input type="text" id="fYear" placeholder="2024"></div>
-    <div class="field">
-      <label>Couleur</label>
-      <div class="color-picker" id="colorPicker">
-        <button class="color-swatch active" style="background:#ff6b47" data-c="#ff6b47" data-b="#fff1ee" onclick="pickColor(this)" title="Orange"></button>
-        <button class="color-swatch" style="background:#4f7cff" data-c="#4f7cff" data-b="#eef1ff" onclick="pickColor(this)" title="Bleu"></button>
-        <button class="color-swatch" style="background:#00b87c" data-c="#00b87c" data-b="#e6f9f3" onclick="pickColor(this)" title="Vert"></button>
-        <button class="color-swatch" style="background:#f5a623" data-c="#f5a623" data-b="#fff8ea" onclick="pickColor(this)" title="Jaune"></button>
-        <button class="color-swatch" style="background:#c56ef3" data-c="#c56ef3" data-b="#f6eeff" onclick="pickColor(this)" title="Violet"></button>
-        <button class="color-swatch" style="background:#1a1714" data-c="#1a1714" data-b="#f0ede8" onclick="pickColor(this)" title="Noir"></button>
-      </div>
-    </div>
-    <div class="modal-actions">
-      <button class="btn-secondary" onclick="closeModal()">Annuler</button>
-      <button class="btn-primary" onclick="saveProject()">Enregistrer ✓</button>
-    </div>
-  </div>
-</div>
 
 <script>
 // ── Data ──────────────────────────────────────────────────────
 const defaults = [
-  { id:1, title:"Tableau de bord analytique", cat:"Web App", desc:"Visualisation de données en temps réel pour une startup fintech. Interface réactive avec graphiques interactifs et alertes personnalisées.", link:"https://exemple.fr", year:"2024", color:"#ff6b47", bg:"#fff1ee" },
-  { id:2, title:"App de bien-être & méditation", cat:"Mobile · iOS", desc:"Application native iOS avec animations fluides, sessions audio et suivi de progression. 4.8★ sur l'App Store.", link:"", year:"2023", color:"#4f7cff", bg:"#eef1ff" },
-  { id:3, title:"Boutique en ligne premium", cat:"E-commerce", desc:"Refonte d'une boutique de mode avec tunnel de conversion optimisé. +67% de taux de conversion après lancement.", link:"https://exemple.fr", year:"2023", color:"#00b87c", bg:"#e6f9f3" }
+  { id:1, title:"MusicFin For WearOS", cat:"Mobile • WearOS", desc:"Application pour Montre qui permet de récupérer les fichiers audio depuis son serveur Jellyfin pour l'écouter librement sur sa montre.", link:"https://musicfin.netlify.app/", year:"2026", color:"#ff6b47", bg:"#fff1ee" },
+  { id:2, title:"MusicFin", cat:"Mobile • Android", desc:"Application pour Téléphone qui permet de récupérer les fichiers audio depuis son serveur Jellyfin pour l'écouter librement sur son téléphone. L'application permet aussi de connecter simplement son serveur Jellyfin à l'application WearOS.", link:"https://musicfin.netlify.app/", year:"2026", color:"#4f7cff", bg:"#eef1ff" },
+  { id:3, title:"Aucun Projet", cat:"", desc:"Aucun Projet pour l'instant, et si vous me contactez pour en parler ?", link:"", year:"20XX", color:"#00b87c", bg:"#e6f9f3" }
 ];
 
 let projects = JSON.parse(localStorage.getItem('pf_projects') || 'null') || defaults;
