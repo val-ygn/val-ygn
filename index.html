@@ -591,16 +591,21 @@ const io = new IntersectionObserver(entries => {
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
 // ── Contact form ──────────────────────────────────────────────
-document.getElementById('contactForm').addEventListener('submit', e => {
-  e.preventDefault();
-  const btn = e.target.querySelector('.btn-send');
-  btn.textContent = 'Envoi…'; btn.disabled = true;
-  setTimeout(() => {
-    document.getElementById('formOk').style.display = 'flex';
-    btn.style.display = 'none';
-    e.target.querySelectorAll('input, textarea').forEach(f => f.value = '');
-  }, 850);
-});
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const btn = e.target.querySelector('.btn-send');
+    if (!btn) return;
+    btn.textContent = 'Envoi…'; btn.disabled = true;
+    setTimeout(() => {
+      const formOk = document.getElementById('formOk');
+      if (formOk) formOk.style.display = 'flex';
+      btn.style.display = 'none';
+      e.target.querySelectorAll('input, textarea').forEach(f => f.value = '');
+    }, 850);
+  });
+}
 
 // ── Init ──────────────────────────────────────────────────────
 render();
