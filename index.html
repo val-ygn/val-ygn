@@ -481,6 +481,7 @@ const defaults = [
 ];
 
 let projects = JSON.parse(localStorage.getItem('pf_projects') || 'null') || defaults;
+if (!projects || projects.length === 0) projects = defaults;
 let editingId = null;
 let selColor = "#ff6b47";
 let selBg = "#fff1ee";
@@ -489,6 +490,7 @@ function persist() { localStorage.setItem('pf_projects', JSON.stringify(projects
 
 // ── Render ────────────────────────────────────────────────────
 function render() {
+  console.log('Rendering projects:', projects);
   const grid = document.getElementById('projectsGrid');
   grid.innerHTML = ''; // Clear existing cards
   projects.forEach((p, i) => {
