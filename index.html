@@ -490,9 +490,11 @@ function persist() { localStorage.setItem('pf_projects', JSON.stringify(projects
 // ── Render ────────────────────────────────────────────────────
 function render() {
   const grid = document.getElementById('projectsGrid');
-  grid.querySelectorAll('.project-card').forEach(c => c.remove());
-  const addCard = document.getElementById('addCard');
-  projects.forEach((p, i) => grid.insertBefore(buildCard(p, i), addCard));
+  grid.innerHTML = ''; // Clear existing cards
+  projects.forEach((p, i) => {
+    const card = buildCard(p, i);
+    grid.appendChild(card);
+  });
 }
 
 function buildCard(p, idx) {
