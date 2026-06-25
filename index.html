@@ -418,10 +418,10 @@ footer p { font-size: 0.73rem; color: var(--muted); }
       <p class="about-body">Passionné par le lien entre design et technologie, je crée des interfaces belles et performantes. Chaque pixel compte, chaque interaction est pensée.</p>
     </div>
     <div class="skills reveal">
-      <div class="skill">⚛️ HTML &amp; CSS</div>
-      <div class="skill">🎨 Design UI/UX</div>
-      <div class="skill">📱 iOS / Swift</div>
-      <div class="skill">📱 Android / Gradle</div>
+      <div class="skill"> HTML &amp; CSS</div>
+      <div class="skill"> Design UI/UX</div>
+      <div class="skill"> iOS / Swift</div>
+      <div class="skill"> Android / Gradle</div>
     </div>
   </div>
 </section>
@@ -435,13 +435,13 @@ footer p { font-size: 0.73rem; color: var(--muted); }
       <p class="contact-intro">Une idée ? Une question ? Je réponds généralement sous 24h.</p>
       <div class="contact-items">
         <a href="mailto:val.ygn@icloud.com" class="contact-item">
-          <span class="ci-left">✉️ val.ygn@icloud.com</span><span class="ci-arrow">↗</span>
+          <span class="ci-left">val.ygn@icloud.com</span><span class="ci-arrow">↗</span>
         </a>
         <a href="" class="contact-item" target="_blank" rel="noopener noreferrer">
           <span class="ci-left">Discord : val.ygn</span><span class="ci-arrow">↗</span>
         </a>
         <a href="https://github.com/val-ygn" class="contact-item" target="_blank" rel="noopener noreferrer">
-          <span class="ci-left">🐙 GitHub</span><span class="ci-arrow">↗</span>
+          <span class="ci-left">GitHub</span><span class="ci-arrow">↗</span>
         </a>
       </div>
     </div>
@@ -466,14 +466,14 @@ footer p { font-size: 0.73rem; color: var(--muted); }
     <div class="footer-logo">Portfolio de Val.ygn</div>
     <div class="social-links" style="margin-top:0.8rem;">
       <a href="https://discord.com/app" class="social-link" target="_blank" rel="noopener noreferrer">Discord : val.ygn</a>
-      <a href="https://github.com/val-ygn" class="social-link" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
+      <a href="https://github.com/val-ygn" class="social-link" target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
   </div>
   <p>© 2026 · Développé par Val.ygn</p>
 </footer>
 
 <script>
-// ── Data ──────────────────────────────────────────────────────
+// Data
 const defaults = [
   { id:1, title:"MusicFin For WearOS", cat:"Mobile • WearOS", desc:"Application pour Montre qui permet de récupérer les fichiers audio depuis son serveur Jellyfin pour l'écouter librement sur sa montre.", link:"https://musicfin.netlify.app/", year:"2026", color:"#ff6b47", bg:"#fff1ee" },
   { id:2, title:"MusicFin", cat:"Mobile • Android", desc:"Application pour Téléphone qui permet de récupérer les fichiers audio depuis son serveur Jellyfin pour l'écouter librement sur son téléphone. L'application permet aussi de connecter simplement son serveur Jellyfin à l'application WearOS.", link:"https://musicfin.netlify.app/", year:"2026", color:"#4f7cff", bg:"#eef1ff" },
@@ -488,7 +488,7 @@ let selBg = "#fff1ee";
 
 function persist() { localStorage.setItem('pf_projects', JSON.stringify(projects)); }
 
-// ── Render ────────────────────────────────────────────────────
+// Render
 function render() {
   console.log('Rendering projects:', projects);
   const grid = document.getElementById('projectsGrid');
@@ -523,7 +523,7 @@ function esc(s) {
   return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-// ── Modal ─────────────────────────────────────────────────────
+// Modal
 function openModal(id) {
   editingId = id !== undefined ? id : null;
   const overlay = document.getElementById('modalOverlay');
@@ -584,13 +584,13 @@ function setColor(c, b) {
   document.querySelectorAll('.color-swatch').forEach(s => s.classList.toggle('active', s.dataset.c === c));
 }
 
-// ── Reveal scroll ─────────────────────────────────────────────
+// Reveal scroll
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
 }, { threshold: 0.1 });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-// ── Contact form ──────────────────────────────────────────────
+// Contact form
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', e => {
@@ -607,7 +607,7 @@ if (contactForm) {
   });
 }
 
-// ── Init ──────────────────────────────────────────────────────
+// Init
 render();
 </script>
 </body>
