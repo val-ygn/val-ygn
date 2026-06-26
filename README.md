@@ -2,7 +2,4 @@
 
 - Current developer of the MusicFin app (Jellyfin streaming app).
 
-Im a french student who's learning to code some apps for differents platforms like PS3, Wii U, maybe PSVita and DSi but it's not that great for now.
-**(Those apps are basically some HTML Launchers apps.)**
-
-Im also learning to code with Gradle and C++
+- A french student learning to code apps, like iOS, Android and WearOS apps, using Swift and Gradle.
