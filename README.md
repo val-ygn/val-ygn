@@ -8,7 +8,7 @@
 
 * 🌍 Based in: **France**
 * 💼 Currently: **CS Student, main developer of the MusicFin app (Android)**
-* 🌱 I’m currently learning: **Windows Server, Active Directory and others.**
+* 🌱 I’m currently learning: **Windows Server, Active Directory and all related.**
 
 ---
 
