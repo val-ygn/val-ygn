@@ -25,11 +25,11 @@
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=val_ygn&show_icons=true&theme=radial" alt="[Your Name]'s GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=val-ygn&show_icons=true&theme=radial" alt="[Your Name]'s GitHub Stats" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=[YOUR_GITHUB_USERNAME]&theme=radial" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=val-ygn&theme=radial" alt="GitHub Streak" />
 </p>
 
 ---
