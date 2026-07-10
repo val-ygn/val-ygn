@@ -1,6 +1,6 @@
 # Hi there, I'm Val.ygn! 👋
 
-> [Developer and Open Source enthusiast, dedicated to building applications, websites and software.]
+> Developer and Open Source enthusiast, dedicated to building applications, websites and software.
 
 ---
 
@@ -36,10 +36,9 @@
 
 ### 📫 Connect with me
 
-* 🌐 Portfolio: [[Link to your site]](http://your-website.com)
-* 💼 LinkedIn: [@YourName](https://linkedin.com/in/your-name)
-* 📧 Email: [your.email@example.com](mailto:your.email@example.com)
+* 🌐 Portfolio: [NOT OUT YET](http://google.com)
+* 📧 Email: [NOT AVAILABLE](mailto:example@example.com)
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=[YOUR_GITHUB_USERNAME]&label=Profile+views&color=0e75b6&style=flat" alt="Profile views counter" />
+  <img src="https://komarev.com/ghpvc/?username=val-ygn&label=Profile+views&color=0e75b6&style=flat" alt="Profile views counter" />
 </p>
