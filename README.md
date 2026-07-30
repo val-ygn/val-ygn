@@ -10,4 +10,4 @@
 
 ### About this account
 
-**Some of the projects have been shutdown, and some of them are still active, like MusicFin app.**
+**Some of the projects have been shutdown, and some of them are still active, like the MusicFin app.**
